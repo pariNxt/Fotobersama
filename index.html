@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kita Berdua</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: url('https://protoinfrastack.ivondy.com/media/PZTgeoqxRujK4w2YYwO4aQZVjXfIIN6gjgWW') no-repeat center center fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+    }
+
+    .couple-container {
+      display: flex;
+      gap: 30px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .person {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .person img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease;
+    }
+
+    .person img:hover {
+      transform: scale(1.05);
+    }
+
+    .name {
+      margin-top: 15px;
+      font-size: 1.4em;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 6px 18px;
+      border-radius: 20px;
+    }
+
+    .heart {
+      font-size: 3em;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Karin & Pahri</h1>
+
+  <div class="couple-container">
+    <div class="person">
+      <img src="https://files.catbox.moe/8xkczv.webp" alt="Foto Kamu">
+      <div class="karin">Karin 💖</div>
+    </div>
+
+    <div class="heart">❤️</div>
+
+    <div class="person">
+      <img src="https://files.catbox.moe/wdij28.jpeg" alt="Foto Aku">
+      <div class="Pahri">pahri 💘</div>
+    </div>
+  </div>
+</body>
+</html>
